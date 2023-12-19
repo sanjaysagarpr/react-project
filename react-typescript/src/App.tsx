@@ -1,14 +1,19 @@
-import React from 'react';
-import './App.css';
 
-function App() {
-  return (
-    <div>
-      <header>
-       <h1>sanjay pr</h1>
-      </header>
-    </div>
-  );
+export const App:React.FC<{}>=()=>{
+  let food="cake"
+  Son()
+  return <div>
+<h1>
+  hello
+  {food}
+</h1>
+<p>hello</p>
+<Son/>
+{Son()}
+  </div>
 }
 
-export default App;
+let Son=()=>{
+  alert("hello")
+  return <h1>yes please</h1>
+}
